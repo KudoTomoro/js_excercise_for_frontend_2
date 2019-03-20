@@ -3,6 +3,8 @@
  *   - textContentを使う
  *     - 「JSで変更した後のタイトル」というテキストをセットする
  */
+const titleChange = document.getElementById('title');
+titleChange.textContent = 'JSで変更した後のタイトル';
 
 
 /**
@@ -11,6 +13,8 @@
  *     - 「JSで変更した後の説明文」というテキストをセットする
  *   - strong要素を使って「説明文」を強調する
  */
+const textChange = document.getElementById('description');
+textChange.innerHTML = 'JSで変更した後の<strong>説明文</strong>';
 
 
  /**
@@ -19,11 +23,12 @@
   *     - 自分で用意する
   *     - 「https://www.pakutaso.com/shared/img/thumb/TOMnemuiDSC01757_TP_V1.jpg」を使う
   */
-
+const attribute = document.getElementById('profile');
+attribute.setAttribute('src', 'https://www.pakutaso.com/shared/img/thumb/TOMnemuiDSC01757_TP_V1.jpg');
 
 /**
  * 課題4: 課題1で作成したh1要素のDOMにクラス属性値をセットする
  *   - セットするクラス属性値はstyle.cssの中身を参考にする
  *     - 背景色がh1要素の背景色が黄色になればOKです
  */
-
+titleChange.className = 'bg-yellow';
